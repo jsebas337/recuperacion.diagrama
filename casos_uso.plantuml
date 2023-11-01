@@ -1,0 +1,15 @@
+@startuml
+left to right direction 
+actor usuario as g 
+packAge BIBLIOTECA {
+    usecase "BIBLIOTECA" as UC1
+    usecase "BASE DE DATOS" as UC2
+    usecase "RECURSOS BIBLIOGRAFICOS" as UC3
+    
+
+}
+g -- UC1
+UC1 <|--UC2
+UC2 <|--UC3
+
+@enduml

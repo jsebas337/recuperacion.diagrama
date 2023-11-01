@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+abstract Biblioteca 
+Biblioteca o-- Recursos
+Recursos <|-- libros
+Recursos <|-- revistas
+Recursos <|-- cd
+Recursos <|-- documental
+
+Recursos : titulo
+Recursos : autor
+Recursos : año
+
+libros : genero_literario
+revistas : lirica
+cd : capacidad
+documental : tema
+
+Biblioteca : Datos_usuario()
+Biblioteca : Recibir()
+Biblioteca : Entregar()
+Biblioteca : Mostrar()
